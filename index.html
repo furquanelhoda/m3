@@ -97,6 +97,31 @@ tbody{
     background: rgb(3, 197, 13);
     color: rgb(7, 9, 10);
 }
+
+/* css table1 */
+
+#table1{
+        width: 40%;
+        font-weight: bold;
+       direction: ltr;
+     
+    
+    }
+
+    .fred{
+        background-color: aqua;
+        color: black;
+    }
+    .one{
+        background: black;
+        color: aliceblue;
+        margin: 2px;
+
+    }
+    .two{
+        background: rgb(9, 250, 102);
+        color: rgb(2, 7, 10);
+    }
     </style>
 </head>
 <body>
@@ -105,7 +130,42 @@ tbody{
         <span style="color:#2c3e50; font-size:22px; background-color:#f1c40f">عروج فكري روحي</span>
         <span style="color:#9b59b6; font-size:22px; background-color:#f1c40f">&nbsp;</span>
     </p>
-    <textarea id="inputText" placeholder="أدخل النص القرآني هنا" oninput="analyzeText()"></textarea>
+    
+    <table id="table1">
+        <thead>
+            <tr>
+                <th class="two">4 </th>
+                <th class="one">1 </th>
+                <th class="two">4 </th>
+                <th class="one">1 </th>
+                <th class="two">4 </th>
+                <th class="one">1 </th>
+                <th class="two">4 </th>
+                <th class="one">10 </th>
+                <th class="two">8 </th>
+                <th class="one">8 </th>
+                <th class="fred">عدد تكرارها</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+                <th class="two">ر</th>
+                <th class="one">ه</th>
+                <th class="two">ط</th>
+                <th class="one">ق</th>
+                <th class="two">س</th>
+                <th class="one">ع</th>
+                <th class="two">ح</th>
+                <th class="one">م</th>
+                <th class="two">ل</th>
+                <th class="one">أ</th>
+                <th class="fred">حروف الفرقان</th>
+            </tr>
+           
+        </tbody>
+    </table>
+    <textarea name="text" id="inputText"  oninput="analyzeText()" required></textarea>
     <button onclick="printResult()">طباعة النتائج</button>
     <div id="output"></div>
 <div>
@@ -128,13 +188,13 @@ tbody{
         <tbody>
 
 <tr>
-    <td>آل عمران</td>
+    <td>آل عمران&nbsp;<span style="color: #eb0e0e;">(ألم)</span>&nbsp;</td>
     <td>المزمل</td>
     <td>الأنبياء</td>
     <td>الناس</td>
     <td>النصر</td>
     <td>الجمعة</td>
-    <td>الشورى</td>
+    <td>الشورى&nbsp;<span style="color: #eb0e0e;">( حم-عسق)</span>&nbsp;</td>
   
 </tr>
 <tr>
@@ -144,39 +204,39 @@ tbody{
     <td>الأنعام</td>
     <td>المسد</td>
     <td>الفتح</td>
-    <td>النمل</td>
+    <td>النمل&nbsp;<span style="color: #eb0e0e;">( طس )</span>&nbsp;</td>
 </tr>
 <tr>
     <td>البروج</td>
-    <td>العنكبوت</td>
+    <td>العنكبوت&nbsp;<span style="color: #eb0e0e;">( ألم)</span>&nbsp;</td>
     <td>قريش</td>
     <td>الحجرات</td>
-    <td>القصص</td>
+    <td>القصص&nbsp;<span style="color: #eb0e0e;">( طسم )</span>&nbsp;</td>
     <td>التين</td>
     <td>محمد</td>
 </tr>
 
 <tr>
-    <td>الشعراء</td>
+    <td>الشعراء&nbsp;<span style="color: #eb0e0e;">( طسم )</span>&nbsp;</td>
     <td>الشمس</td>
     <td>الممتحنة</td>
-    <td>غافر</td>
+    <td>غافر&nbsp;<span style="color: #eb0e0e;">( حم )</span>&nbsp;</td>
     <td>الجن</td>
-    <td>إبراهيم</td>
+    <td>إبراهيم&nbsp;<span style="color: #eb0e0e;">( ألر )</span>&nbsp;</td>
     <td>العاديات</td>
 </tr>
 <tr>
     <td>البينة</td>
     <td>الإنسان</td>
     <td>الطور</td>
-    <td>هود</td>
+    <td>هود&nbsp;<span style="color: #eb0e0e;">( ألر )</span>&nbsp;</td>
     <td>الضحى</td>
     <td>الزلزلة</td>
     <td>الطلاق</td>
 </tr>
 <tr>
-    <td>الجاثية</td>
-    <td>طه</td>
+    <td>الجاثية&nbsp;<span style="color: #eb0e0e;">( حم )</span>&nbsp;</td>
+    <td>طه&nbsp;<span style="color: #eb0e0e;">( طه )</span>&nbsp;</td>
     <td>الفلق</td>
     <td>التوبة</td>
     <td>الليل</td>
@@ -186,17 +246,17 @@ tbody{
 <tr>
     <td>المؤمنون</td>
     <td>النجم</td>
-    <td>يوسف</td>
+    <td>يوسف&nbsp;<span style="color: #eb0e0e;">( ألر )</span>&nbsp;</td>
     <td>الشرح</td>
     <td>الحديد</td>
-    <td>لقمان</td>
+    <td>لقمان&nbsp;<span style="color: #eb0e0e;">( ألم)</span>&nbsp;</td>
     <td>القيامة</td>
 </tr>
 <tr>
-    <td>السجدة</td>
+    <td>السجدة&nbsp;<span style="color: #eb0e0e;">( ألم)</span>&nbsp;</td>
     <td>الهمزة</td>
     <td>المنافقون</td>
-    <td>الزخرف</td>
+    <td>الزخرف&nbsp;<span style="color: #eb0e0e;">( حم )</span>&nbsp;</td>
     <td>فاطر</td>
     <td>البلد</td>
     <td> الأحزاب</td>
@@ -205,7 +265,7 @@ tbody{
     <td>المرسلات</td>
     <td>الملك</td>
     <td>الذاريات</td>
-    <td>يونس</td>
+    <td>يونس&nbsp;<span style="color: #eb0e0e;">( ألر )</span>&nbsp;</td>
     <td>الفجر</td>
     <td></td>
     <td></td>
@@ -224,9 +284,10 @@ tbody{
             'ق': '1',
             'ط': '4',
             'ه': '1',
-            
             'ر': '4'
         };
+        const highlightChars1 = ['ا', 'أ', 'إ', 'ئ','ؤ', 'ء', 'ى', 'آ', 'ل', 'م', 'ح', 'ع', 'س', 'ق', 'ط', 'ه', 'ر'];
+
 
         function highlightText(text) {
             return text.split('').map(char => {
@@ -239,6 +300,48 @@ tbody{
             }).join('');
         }
 
+        // script placeholder
+        
+        const runInput = document.querySelector('#inputText');
+        const line = '   أدخل النص القرآني هنا ......';
+        const speed = 100;
+        let i = 0;
+        let done;
+
+        function run_line() {
+            if (i++ < line.length) {
+                runInput.value = line.substring(0, i);
+            } else {
+                runInput.value = " ";
+                i = 0;
+            }
+            done = setTimeout(run_line, speed);
+        }
+        run_line();
+
+        const inputText = document.getElementById('inputText');
+        const customAttr = inputText.getAttribute('placeholder');
+
+        inputText.addEventListener('focus', function () {
+            clearTimeout(done);
+            this.value = '';
+            if (this.hasAttribute('placeholder')) {
+                this.removeAttribute('placeholder');
+            }
+        });
+
+        inputText.addEventListener('blur', function () {
+            this.setAttribute('placeholder', customAttr);
+        });
+
+        //end script place holder
+        function highlightText1(text) {
+            return text.split('').map(char => 
+                highlightChars1.includes(char) ? `<span class="highlight">${char}</span>` : char
+            ).join('');
+        }
+
+
         function analyzeText() {
             const inputText = document.getElementById('inputText').value;
             const outputDiv = document.getElementById('output');
@@ -249,6 +352,7 @@ tbody{
             
             lines.forEach((line, index) => {
                 if (line.trim() !== '') {
+                    outputDiv.innerHTML += `<div class="input-line">القرآن: ${highlightText1(line)}</div>`;
                     outputDiv.innerHTML += `<div class="input-line">القرآن: ${highlightText(line)}</div>`;
                     const lineAnalysis = analyzeLine(line);
                     outputDiv.innerHTML += `<div class="output-line">فرقان: ${lineAnalysis}</div>`;
